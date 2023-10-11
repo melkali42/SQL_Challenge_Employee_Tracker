@@ -38,9 +38,13 @@ This is the URL for my GitHub repository for this challenge: https://github.com/
 
 This is the link for the walkthrough video demonstrating the functionality of the application: https://drive.google.com/file/d/1chodCW9_3k821qoAgoNNB7YDFsp20trH/view
 
-![Screenshot1](assets/images/screenshot.png)
-    ```
+![Screenshot1](https://github.com/melkali42/SQL_Challenge_Employee_Tracker/blob/main/assets/mysql%201.PNG)
+![Screenshot2](https://github.com/melkali42/SQL_Challenge_Employee_Tracker/blob/main/assets/mysql%202.PNG)
+![Screenshot3](https://github.com/melkali42/SQL_Challenge_Employee_Tracker/blob/main/assets/SQL%20Challenge%201.PNG)
+![Screenshot4](https://github.com/melkali42/SQL_Challenge_Employee_Tracker/blob/main/assets/SQL%20Challenge%202.PNG)
+![Screenshot5](https://github.com/melkali42/SQL_Challenge_Employee_Tracker/blob/main/assets/SQL%20Challenge%203.PNG)
 
+  
 ## Credits
 
 Create by Melissa Kalish. I conducted several searches in https://www.google.com/ and utilized https://stackoverflow.com/ and https://www.w3schools.com/ for reserach, viewing others code examples, questions and answers. I used https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide to create the challenge README for the repository.
