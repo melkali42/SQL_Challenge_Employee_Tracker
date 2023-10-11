@@ -9,7 +9,7 @@ const startMenu = () => {
       name: 'action',
       type: 'list',
       message: 'What would you like to do?',
-      choices: ['View Employees', 'View Roles', 'View Departments', 'Add Employee', 'Add Role', 'Add Department', 'Exit']
+      choices: ["View All Employees", "View All Roles", "View All Departments", "Update Employee Role" , "Add Role", "Add Department", "Exit"]
     })
     .then((answer) => {
         switch (answer.start) {
