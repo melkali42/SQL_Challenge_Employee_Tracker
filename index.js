@@ -6,13 +6,13 @@ const connection = require('./db/connection');
 const startMenu = () => {
     inquirer
     .prompt({
-      name: 'action',
-      type: 'list',
-      message: 'What would you like to do?',
-      choices: ["View All Employees", "View All Roles", "View All Departments", "Update Employee Role" , "Add Role", "Add Department", "Exit"]
+        name: 'action',
+        type: 'list',
+        message: 'What would you like to do?',
+        choices: ["View All Employees", "View All Roles", "View All Departments", "Update Employee Role" , "Add Role", "Add Department", "Add Employee", "Exit"]
     })
     .then((answer) => {
-        switch (answer.start) {
+        switch (answer.action) {
             case "View All Employees":
                 viewAllEmployees();
                 break;
@@ -92,6 +92,7 @@ const addEmployee = () => {
         connection.query("INSERT INTO employee SET ?", answer, (err, res) => {
             if (err) throw err;
             console.table(res);
+            console.log("Employee added!");
             startMenu();
         });
     });
@@ -108,6 +109,7 @@ const addDepartment = () => {
     .then((answer) => {
         connection.query("INSERT INTO department SET ?", answer, (err, res) => {
             if (err) throw err;
+            console.log("Department added!");    
             console.table(res);
             startMenu();
         });
@@ -135,6 +137,7 @@ const addRole = () => {
     .then((answer) => {
         connection.query("INSERT INTO role SET ?", answer, (err, res) => {
             if (err) throw err;
+            console.log("Role added!");
             console.table(res);
             startMenu();
         });
@@ -157,6 +160,7 @@ const updateEmployeeRole = () => {
     .then((answer) => {
         connection.query("UPDATE employee SET role_id = ? WHERE id = ?", [answer.role_id, answer.employee], (err, res) => {
             if (err) throw err;
+            console.log("Employee updated!");
             console.table(res);
             startMenu();
         });
